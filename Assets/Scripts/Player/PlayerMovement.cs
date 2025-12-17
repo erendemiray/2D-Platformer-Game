@@ -99,4 +99,8 @@ private bool onWall()
          RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center,boxCollider.bounds.size , 0f, new Vector2 (transform.localScale.x,0),0.1f, wallLayer);
          return raycastHit.collider != null;
     }
+    public bool canAttack()
+    {
+        return true;
+    }
 }
